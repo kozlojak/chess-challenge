@@ -39,7 +39,7 @@ public class Queen implements Piece {
 
     @Override
     public boolean pieceEquation(Integer lengthPosition, Integer widthPosition) {
-        return lengthPosition == this.lengthPosition || widthPosition == this.widthPosition
+        return lengthPosition.equals(this.lengthPosition) || widthPosition.equals(this.widthPosition)
                 || lengthPosition + widthPosition == this.lengthPosition + this.widthPosition
                 || lengthPosition - widthPosition == this.lengthPosition - this.widthPosition;
     }
