@@ -24,6 +24,7 @@ public class ChessChallengeApplication {
 		Instant start, stop;
 
 		println("Set the input parameters:");
+
 		int length = readParameter("Length");
 		int width = readParameter("Width");
 		int numberOfKings = readParameter("Number of kings");

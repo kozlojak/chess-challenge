@@ -4,8 +4,8 @@ import com.jakub.kozlowski.chessChallenge.shared.FieldType;
 
 public class Rook implements Piece {
 
-    public Integer lengthPosition;
-    public Integer widthPosition;
+    private Integer lengthPosition;
+    private Integer widthPosition;
 
     public Rook() {
         this.lengthPosition = 0;
@@ -39,6 +39,6 @@ public class Rook implements Piece {
 
     @Override
     public boolean pieceEquation(Integer lengthPosition, Integer widthPosition) {
-        return lengthPosition == this.lengthPosition || widthPosition == this.widthPosition;
+        return lengthPosition.equals(this.lengthPosition) || widthPosition.equals(this.widthPosition);
     }
 }

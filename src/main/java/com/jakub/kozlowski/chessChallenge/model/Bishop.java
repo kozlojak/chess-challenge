@@ -4,8 +4,8 @@ import com.jakub.kozlowski.chessChallenge.shared.FieldType;
 
 public class Bishop implements Piece {
 
-    public Integer lengthPosition;
-    public Integer widthPosition;
+    private Integer lengthPosition;
+    private Integer widthPosition;
 
     public Bishop() {
         this.lengthPosition = 0;
